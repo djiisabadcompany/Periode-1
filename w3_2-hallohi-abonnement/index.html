@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Je abonnement binnen 5 minuten geregeld
+    </h1>
+  </header>
+  <section>
+    <p>Voornaam </p>
+    <input required pattern="[A-Za-z]+">
+
+    <p>Achternaam</p>
+    <input required pattern="[A-Za-z]+">
+
+    <p>Aanhef</p>
+
+    <div style="display: flex; gap: 16px; align-items: center;">
+      <label>
+        <input type="checkbox" name="dhr" class="single-choice" checked>
+        Dhr.
+      </label>
+      <label>
+        <input type="checkbox" name="mevr" class="single-choice">
+        Mevr
+      </label>
+      <label>
+        <input type="checkbox" name="and" class="single-choice">
+        Anders.
+      </label>
+
+
+      <script>
+        const checkboxes = document.querySelectorAll('.single-choice');
+
+        checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+              checkboxes.forEach(other => {
+                if (other !== checkbox) other.checked = false;
+              });
+            }
+          });
+        });
+      </script>
+    </div>
+    <p>Straat met huisnummer</p>
+    <input type="text" pattern="[1-999]" required>
+
+    <p>postcode</p>
+    <p>Voer in tussen 1000 AA tot 9999 ZZ</p>
+    <input type="text" pattern="^[1-9][0-9]{3}\s?(?!([sS][sSdDaA]))[a-zA-Z]{2}$" required>
+
+
+    <p>Woonplaats</p>
+    <input required>
+
+    <p>Land</p>
+    <select name="countries" id="country-select">
+      <option value="NL">Nederland</option>
+      <option value="BL">Belgie</option required>
+    </select>
+
+    <p>Iban nummer</p>
+    <input type="text" pattern="NL[0-9]{2}[A-Z]{4}[0-9]{10}" maxlength="18" required>
+
+    <p>type abonnement</p>
+    <label>
+      <input required type="checkbox" id="Mobiel"> Mobiel.
+    </label>
+    <label>
+      <input required type="checkbox" id="Glasvezel"> Glasvezel.
+    </label>
+    <label>
+      <input required type="checkbox" id="TV">Tv.
+    </label>
+    <br><br>
+    <p>Datum van ingang abonnement</p>
+    <label for="date">Kies een datum:</label>
+
+    <input type="date" id="date" name="date" required>
+
+    <script>
+      const dateInput = document.getElementById("date");
+
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, "0");
+      const day = String(today.getDate()).padStart(2, "0");
+
+      dateInput.min = `${year}-${month}-${day}`;
+    </script>
+
+    <br><br>
+    <p>looptijd in maanden</p>
+
+    <label for="month">Vul in de hoeveelheid maanden</label>
+    <input type="month" id="month" name="month" required>
+
+    <script>
+      const monthInput = document.getElementById("month");
+
+      const today = new Date();
+      const year = today.getFullYear();
+      const month = String(today.getMonth() + 1).padStart(2, "0");
+
+      monthInput.min = ${month}
+    </script>
+    <p>hoeveel gebruikers?</p>
+    <p>maximaal 4</p>
+    <input type="number" id="users" name="users" min="1" max="4" step="1" value="1" required>
+    <p>Emailadres</p>
+    <input type="email" required>
+
+    <p>Wachtwoord aanmaken</p>
+    <input type="password" required>
+
+    <p>Sluit abonnement af:</p>
+    <button>Verzenden</button>
+  </section>
+</body>
+
+</html>

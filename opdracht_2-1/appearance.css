@@ -1,0 +1,25 @@
+body {  
+background-color:   rgb(129, 182, 235)
+}
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.font-1 {
+  font-family: "comic sans ms", sans-serif;
+  color: red;
+}
+.font-3 {
+  font-family: "comic sans ms", sans-serif;
+  color: rgb(9, 255, 0);
+  font-size: 40px;
+}
+.font-2 {
+  font-family: "comic sans ms", sans-serif;
+  color: rgb(255, 255, 255);
+}
+a {
+  padding: 10px;
+}

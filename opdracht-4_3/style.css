@@ -1,0 +1,29 @@
+html {
+    font-size: 10px;
+}
+
+body {}
+
+header {
+    background-color: purple;
+    padding: 10rem;
+}
+
+header ul li {
+    font-size: 4.9rem;
+    display: inline;
+    text-align: center;
+    color: white;
+    margin: 4rem;
+}
+
+footer {
+    font-size: 3rem;
+    display: inline;
+    text-align: center;
+    background: purple;
+}
+
+nav {
+    background-color: rgb(84, 2, 79);
+}

@@ -1,0 +1,168 @@
+header {
+    font-family: "ftltlt";
+    background-size: 100%;
+    font-size: 60px;
+}
+
+section {
+    font-family: "ftltlt";
+}
+
+footer {
+    font-family: "ftltlt";
+    background-color: #9000ff;
+    height: 50px;
+}
+
+button {
+    font-family: "ftltlt";
+}
+
+table {
+    background-color: #7272dd;
+    background-size: 100%;
+    width: 100%;
+    font-size: 32px;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+.under-section {
+    background-color: #f5f7fa;
+}
+
+.under-body {
+    color: black;
+}
+
+b {
+    color: #31e7ba;
+}
+
+.button2 button {
+    background-color: #47017d;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button1 button {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: white: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-left {
+    width: 55%;
+    height: 100vh;
+}
+
+nav {
+    li {
+        list-style: none;
+        position: relative;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .drop-down {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: max-content;
+        background-color: #7272dd;
+    }
+
+    li:hover .drop-down {
+        display: flex;
+    }
+}
+
+.main-nav {
+    background-color: #7272dd;
+}
+
+.main-nav>ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 15px 40px;
+}
+
+.main-nav li {
+    position: relative;
+}
+
+.main-nav a,
+.main-nav button {
+    color: white;
+    font: inherit;
+    text-decoration: none;
+}
+
+.main-nav button {
+    background: none;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    border-bottom-right-radius: 80px;
+    left: 0;
+    z-index: 10;
+    min-width: 180px;
+    padding: 10px 0;
+    list-style: none;
+    background-color: #7272dd;
+
+}
+
+.drop-down li a {
+    display: block;
+    padding: 8px 12px;
+}
+
+.drop-down li a:hover {
+    background-color: #5b5bc0;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+}
+
+.service:hover .drop-down,
+.service:focus-within .drop-down {
+    display: block;
+}

@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+.banner {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #0b0b0e;
+    color: #ffffff;
+    padding: 16px 18px;
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.banner1 {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    background-color: #0b0b0e;
+    color: #ffffff;
+    padding: 16px 18px;
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.banner2 {
+    position: relative;
+    width: 970px;
+    height: 250px;
+    background-color: #0b0b0e;
+    color: #ffffff;
+    padding: 16px 18px;
+    overflow: hidden;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.dash-group {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.dash {
+    width: 18px;
+    height: 6px;
+}
+
+.dash-purple {
+    background-color: #7822ff;
+}
+
+.dash-blue {
+    background-color: #5555c8;
+}
+
+.dash-light-blue {
+    background-color: #b0b0ed;
+}
+
+.banner-body {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.banner-body1 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+.banner-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-left {
+    max-width: 175px;
+}
+
+.title-wrap {
+    display: flex;
+    gap: 6px;
+    line-height: 1;
+}
+
+.title {
+    font-family: "Georgia", serif;
+    font-size: 48px;
+}
+
+.title2 {
+    font-family: "Georgia", serif;
+    font-size: 57px;
+}
+
+.bubble-icon {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-20px);
+}
+
+.sub-title {
+    font-family: "Georgia", serif;
+    font-size: 19px;
+    margin-top: 6px;
+}
+
+.sub-title2 {
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    margin-top: 6px;
+}
+
+.product-type {
+    font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.product-type2 {
+    font-size: 16px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.list {
+    font-size: 13px;
+    list-style-type: none;
+}
+
+.list2 {
+    font-size: 20px;
+    list-style-type: none;
+    transform: translateY(50px);
+}
+
+.sim-wrapper {
+    margin-right: -4px;
+    margin-top: 4px;
+}
+
+.sim-img {
+    width: 65px;
+    height: auto;
+    display: block;
+}
+
+.sim-img1 {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-left: 30px;
+    transform: rotate(90deg);
+}
+
+.sim-img2 {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-left: 30px;
+    transform: rotate(90deg);
+}
+
+.bottom-ballsack {
+    position: absolute;
+    bottom: -90px;
+    right: -50px;
+    width: 250px;
+    height: 180px;
+    background-color: #6366f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.bottom-ballsack1 {
+    position: absolute;
+    right: -100px;
+    bottom: -80px;
+    width: 550px;
+    height: 300px;
+    background-color: #6366f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.bottom-button {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+}
+
+.bottom-ballsack2 {
+    position: absolute;
+    right: -260px;
+    bottom: -140px;
+    width: 600px;
+    height: 450px;
+    background-color: #6366f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-button2 {
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-100px, -50px) scale(2);
+    transform-origin: center center;
+}
+
+.bottom-button3 {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 4px;
+}

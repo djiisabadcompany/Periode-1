@@ -152,7 +152,7 @@ nav {
 }
 
 .drop-down li a {
-    display: block;
+    display: flex;
     padding: 8px 12px;
 }
 
@@ -164,5 +164,5 @@ nav {
 
 .service:hover .drop-down,
 .service:focus-within .drop-down {
-    display: block;
+    display: flex;
 }

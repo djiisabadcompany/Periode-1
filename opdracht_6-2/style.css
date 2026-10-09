@@ -1,0 +1,37 @@
+.container {
+    display: flex; 
+    width: 1200px;
+    gap: 100px;
+}
+
+.container-reversed {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    display: flex;
+    width: 1200px;
+    gap: 100px;
+}
+
+.box1 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 255);
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+}
+
+.box4 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 0);
+}
